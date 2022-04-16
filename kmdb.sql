@@ -108,17 +108,17 @@ DROP TABLE IF EXISTS cast;
 -- Create new tables, according to your domain model
 -- TODO!
 
-CREATE TABLE studio (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    studio_name TEXT,
-    movies_id INTEGER
-);
-
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_title TEXT,
     year_released INTEGER,
     mpaa_rating INTEGER
+);
+
+CREATE TABLE studio (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio_name TEXT,
+    movies_id INTEGER
 );
 
 CREATE TABLE cast (
@@ -127,9 +127,6 @@ CREATE TABLE cast (
     character_name TEXT,
     movies_id INTEGER
 );
-
-
-
 
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
@@ -199,6 +196,15 @@ Values  ("Christian Bale",
          "3"),
         ("Anne Hathaway",
          "Selena Kyle",
+         "3");
+INSERT INTO studio(
+    studio_name,
+    movies_id)
+Values ("Warner Bros",
+         "1"), 
+       ("Warner Bros",
+         "2"),
+       ("Warner Bros",
          "3");
 
 
