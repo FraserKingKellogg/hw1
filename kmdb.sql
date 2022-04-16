@@ -153,16 +153,27 @@ full_name,
 character_name,
 movies_id
 )
-Values ("Christian Bale",
+Values  ("Christian Bale",
         "Bruce Wayne",
          "1"),
         ("Michael Cane",
          "Alfred",
          "1"),
-         ("Liam Neeson",
+        ("Liam Neeson",
          "Ra's Al Ghul",
-         "1")
-         ;
+         "1"),
+         ("Katie Holmes",
+          "Rachel Dawes",
+          "1"  ),
+         ("Gary Oldman",
+         "Commissioner Gordon ",
+         "1" ),
+         ("Christian Bale",
+          "Bruce Wayne",
+          "2" ),
+          ("Heath Ledger",
+          "Joker",
+          "2");
 
 
 -- Prints a header for the movies output
