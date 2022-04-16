@@ -113,24 +113,22 @@ CREATE TABLE movies (
     movie_title TEXT,
     year_released INTEGER,
     MPAA_rating INTEGER,
-    studio TEXT
+    studio_name TEXT
 );
 
 CREATE TABLE cast (
-    id INTERGER PRIMARY KEY AUTOINCREMENT,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_title TEXT,
     full_name TEXT,
-    character_name TEXT
+    character_name TEXT,
+    movies_id INTEGER
 );
 
-CREATE TABLE studios (
-    id INTEGER PRIMARY KEY AUTOINCREMENT
-    name TEXT
-
+CREATE TABLE studio (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio_name TEXT,
+    movies_id INTEGER
 );
-
-
-
 
 
 -- Insert data into your database that reflects the sample data shown above
