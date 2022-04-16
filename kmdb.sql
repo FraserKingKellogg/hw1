@@ -115,7 +115,6 @@ CREATE TABLE movies (
     mpaa_rating INTEGER
 );
 
-
 CREATE TABLE cast (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     full_name TEXT,
@@ -140,14 +139,30 @@ year_released,
 mpaa_rating
 )
 Values ("Batman Begins",
-"2005",
-"PG-13"
-),("The Dark Knight",
-"2008",
-"PG-13"
-), ("The Dark Knight Rises",
-"2012",
-"PG-13");
+        "2005",
+        "PG-13"
+)     ,("The Dark Knight",
+        "2008",
+       "PG-13"
+)     ,("The Dark Knight Rises",
+        "2012",
+        "PG-13");
+
+INSERT INTO cast (
+full_name,
+character_name,
+movies_id
+)
+Values ("Christian Bale",
+        "Bruce Wayne",
+         "1"),
+        ("Michael Cane",
+         "Alfred",
+         "1"),
+         ("Liam Neeson",
+         "Ra's Al Ghul",
+         "1")
+         ;
 
 
 -- Prints a header for the movies output
