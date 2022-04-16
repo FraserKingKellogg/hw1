@@ -116,20 +116,20 @@ CREATE TABLE movies (
     studio TEXT
 );
 
+CREATE TABLE cast (
+    id INTERGER PRIMARY KEY AUTOINCREMENT,
+    movie_title TEXT,
+    full_name TEXT,
+    character_name TEXT
+);
+
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT
     name TEXT
 
 );
 
-CREATE TABLE cast (
-    id INTERGER PRIMARY KEY AUTOINCREMENT,
-    movie_title TEXT,
-    full_name TEXT,
-    character_name TEXT
 
-
-);
 
 
 
