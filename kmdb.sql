@@ -112,13 +112,12 @@ CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_title TEXT,
     year_released INTEGER,
-    MPAA_rating INTEGER,
-    studio_name TEXT
+    mpaa_rating INTEGER
 );
+
 
 CREATE TABLE cast (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    movie_title TEXT,
     full_name TEXT,
     character_name TEXT,
     movies_id INTEGER
@@ -134,6 +133,22 @@ CREATE TABLE studio (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+
+INSERT INTO movies (
+movie_title,
+year_released,
+mpaa_rating
+)
+Values ("Batman Begins",
+"2005",
+"PG-13"
+),("The Dark Knight",
+"2008",
+"PG-13"
+), ("The Dark Knight Rises",
+"2012",
+"PG-13");
+
 
 -- Prints a header for the movies output
 .print "Movies"
