@@ -108,6 +108,12 @@ DROP TABLE IF EXISTS cast;
 -- Create new tables, according to your domain model
 -- TODO!
 
+CREATE TABLE studio (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio_name TEXT,
+    movies_id INTEGER
+);
+
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_title TEXT,
@@ -122,11 +128,7 @@ CREATE TABLE cast (
     movies_id INTEGER
 );
 
-CREATE TABLE studio (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    studio_name TEXT,
-    movies_id INTEGER
-);
+
 
 
 -- Insert data into your database that reflects the sample data shown above
@@ -200,6 +202,7 @@ Values  ("Christian Bale",
          "3");
 
 
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
@@ -207,6 +210,7 @@ Values  ("Christian Bale",
 
 -- The SQL statement for the movies output
 -- TODO!
+
 
 -- Prints a header for the cast output
 .print ""
