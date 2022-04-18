@@ -139,6 +139,8 @@ CREATE TABLE roles (
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
 
+--Insert Movies here
+
 INSERT INTO movies (
 movie_title,
 year_released,
@@ -159,12 +161,12 @@ Values ("Batman Begins",
 INSERT INTO actors (
   full_name
 )
-Values ("Christian Bale"); --1
+Values ("Christian Bale"); 
 
 INSERT INTO actors (
   full_name
 )
-Values ("Michael Caine"); --2
+Values ("Michael Caine"); 
 
 INSERT INTO actors (
   full_name
@@ -264,6 +266,8 @@ Values  (1,
         (11,
          "Selena Kyle",
          3);
+
+-- Insert Studio here
 INSERT INTO studio(
     studio_name,
     movies_id)
